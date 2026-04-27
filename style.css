@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    background-color: #8d52fe;
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+    max-width: 375px;
+    width: 100%;
+    border-radius: 20px;
+    background: #f4f4f4;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+button {
+    background: #772FD3;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    font-size: 14px;
+    color: #777777;
+}
+
+.currency-value, .currency-value-to-convert {
+    font-size: 20px;
+    font-weight: 700;
+    color: #555555;
+}
+
+.currency-img-from, .currency-img-to {
+    transition: transform 0.2s ease;
+}
+
+.currency-img-from:hover, .currency-img-to:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+
+    /* Container principal */
+    main {
+        width: 90%;
+        padding: 30px 16px;
+    }
+
+    /* Logo menor */
+    .logo {
+        width: 70%;
+    }
+
+    /* Inputs e selects mais compactos */
+    select,
+    input {
+        height: 44px;
+        font-size: 15px;
+    }
+
+    /* Botão ajustado */
+    button {
+        height: 44px;
+        font-size: 16px;
+    }
+
+    /* Layout continua vertical (ok), só melhora espaçamento */
+    section {
+        padding: 10px;
+    }
+
+    /* Seta com menos margem */
+    .arrow {
+        margin: 10px 0;
+    }
+
+    /* Valores um pouco menores */
+    .currency-value,
+    .currency-value-to-convert {
+        font-size: 18px;
+    }
+
+    /* Imagens menores */
+    .currency-img-from,
+    .currency-img-to {
+        width: 40px;
+    }
+}
